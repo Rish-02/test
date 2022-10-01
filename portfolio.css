@@ -4,8 +4,8 @@
 example::-webkit-scrollbar {
     display: none;
   }
- 
-  
+
+
 
   @-webkit-keyframes rotating /* Safari and Chrome */ {
     from {
@@ -93,7 +93,7 @@ example::-webkit-scrollbar {
     padding: 0.5rem;
     width: 50%;
     font-size: 40px;
-    background-color:#2322226e;
+    background-color:blue;
 }
 .section {
     height: 10vh;
