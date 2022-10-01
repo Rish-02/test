@@ -13,7 +13,7 @@ info.once("value" , function(snapshot){
 
     document.getElementById('name').innerHTML = lastElement.name;
     document.getElementById('domain').innerHTML = lastElement.domain;
-    document.getElementById('bio-about').innerHTML = lastElement.bio + "<br>My domain is " + lastElement.domain;
+    document.getElementById('bio-about').innerHTML = lastElement.bio;
 
     document.getElementById('project-list').innerHTML = `
     <div class="serial-number-container"><span class="serial-number">01</span></div>
