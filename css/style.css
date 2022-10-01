@@ -1,0 +1,491 @@
+*{
+    background-color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+  }
+
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes rotating-anti /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes rotating-anti {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+
+/* utility classes */
+
+
+
+.container{
+    /* max-width: 2000px; */
+    min-width: 220px;
+    /* margin: auto; */
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.btn{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    background: #A9DDDD;
+    margin: 1em 1.75em;
+    padding: .35em 1.35em;
+    font-size: 1.75rem;
+    border-radius: 15%;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+}
+
+
+.picture{
+    flex: 1;
+    /* display:flex;  */
+    /* align-items:flex-end; */
+    /* justify-content: flex-end; */
+    /* padding: 2rem 1rem ; */
+     /* margin-top: 4em; */
+    background-size:contain;
+    background-position: bottom right;
+}
+
+
+.vector1{
+    background-image: url('../images/Vector\ 7.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 33vh;
+    right: 4%;
+    height: 47%;
+    width: 27%;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.vector1 {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+}
+
+.vector2{
+    background-image: url('../images/Vector\ 8.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 8vh;
+    right: 22%;
+    height: 45%;
+    width: 27%;
+    z-index: 2;
+
+    background-color: transparent;
+}
+
+.vector2 {
+    -webkit-animation: rotating-anti 10s linear infinite;
+    -moz-animation: rotating-anti 10s linear infinite;
+    -ms-animation: rotating-anti 10s linear infinite;
+    -o-animation: rotating-anti 10s linear infinite;
+    animation: rotating-anti 10s linear infinite;
+  }
+
+.vector3{
+    background-image: url('../images/Vector\ 9.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 67vh;
+    right: 40%;
+    height: 24%;
+    width: 14%;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.vector3 {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+  }
+
+.picture img{
+    background-color: transparent;
+}
+
+.text-primary{
+    color:#bda609;
+}
+
+.text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    padding: 1rem 0 0em;
+    font-size: 2.25rem;
+    font-family: Helvetica, sans-serif;
+    /* z-index: 3; */
+}
+
+.text .buttons .btn{
+    display: inline;
+    padding: 0.4rem 02rem;
+    font-size: .75em;
+    margin-left: 4rem;
+    text-align: center;
+}
+
+button{
+    border: none;
+    text-align: center;
+}
+
+.button{
+    position: relative;
+    flex: 1;
+    margin: 1em;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin: 50px 70px 30px;
+
+    z-index: 100;
+}
+
+.data input{
+    margin-top: 1em;
+    border: none;
+    border-bottom:1px solid #AFAAAA;
+    font-size: 1.25rem;
+}
+
+.form-data{
+    flex: 2;
+}
+
+.buttons{
+    flex: 1;
+    margin: 1em;
+}
+
+
+
+.heading{
+    /* font-size: .85em; */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+}
+
+.heading h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: 810;
+    width: 90%;
+    font-size: 3.5rem;
+    margin:0 0 .62em .7em;
+}
+
+
+
+@media (max-width:1091px){
+    .heading {
+        font-size: .7rem;
+    }
+    .text{
+        font-size: 2rem;
+        width: 50%;
+    }
+    .input{
+        font-size: 1.25rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        padding: 0rem;
+        margin: 0px;
+        align-items: baseline;
+        
+    }
+    img{
+        width: 80%;
+    }
+    .button .btn{
+        margin: 0em 01.26em;
+        padding: 0.15em 1.35em;;
+    }
+}
+
+@media (max-width:800px) {
+    .text{
+        flex: 2;
+        position: relative;
+        top: -06%;
+        font-size: 2rem;
+        height: 100%;
+    }
+    .heading{
+        font-size: .8rem;
+    }
+    .picture{
+        height: 65%;
+        width: 50%;
+        display:flex;
+        align-items:flex-end;
+        justify-content:flex-end;
+    }
+    .picture img{
+        width: 90%;
+    }
+    .buttons .btn{
+        margin: 0px;
+        z-index: 10;
+        margin-top: 2rem;
+    }
+
+    .button .btn{
+        margin-left: 1rem  ;
+        padding: 0.15em 1.9em;
+        z-index: 10;
+    }
+
+    .prev{
+        
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .submit{
+        position: relative;
+        left: 15.2rem;
+        bottom: 2.26rem;
+    }
+
+    .form-data{
+        margin-top: 3rem;
+    }
+    #page-5{
+        z-index: 4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:650px){
+    #page-2 .container,#page-3 .container,#page-4 .container{
+        position: relative;
+        top: 8rem;
+    }
+    .heading h1{
+        font-size: 3rem;
+    }
+    .text{
+        flex: 3;
+        font-size: 1.4rem;
+        width: 70% !important;
+        height: 70%;
+    }
+    .data input{
+        font-size: .6rem;
+
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    .picture{
+        height: 55%;
+        width: 50%;
+    }
+    #page-2 .container .picture ,#page-3 .container .picture,#page-4 .container .picture{
+        height: 35%;
+    }
+
+    .text .form-data{
+        height: 0 !important;
+    }
+    .buttons .btn{
+        margin-top: 0 !important;
+        padding-top: .6rem !important;
+        margin-left: 4rem;
+        position: relative;
+        top: 4rem;
+        left: 2rem;
+    }
+
+    .button{
+        position: relative;
+        top: 4rem;
+    }
+    .button .btn{
+        margin: 0 3em  ;
+        padding: 0.35em 1.55em;
+
+    }
+
+    .prev{
+        position: relative;
+        top:6rem;
+        left: 1.5rem;
+    }
+    .submit{
+        position: relative;
+        top: 4.45rem;
+        left: 10rem;
+    }
+
+    #page-5 .text,#page-6 .text{
+        position: relative;
+        top: 3rem;
+    }
+
+    .data{
+        margin: 2rem 2rem 2rem 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:390px){
+    #page-2 .container,#page-3 .container,#page-4 .container{
+        position: relative;
+        top: 8rem;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+    .text{
+        font-size: 1rem;
+        width: 60% !important;
+        height: 65%;
+    }
+    .data input{
+        font-size: .6rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    .picture{
+        height: 55%;
+        width: 50%;
+    }
+    #page-2 .container .picture ,#page-3 .container .picture,#page-4 .container .picture{
+        height: 35%;
+    }
+
+    .text .form-data{
+        height: 0 !important;
+    }
+    .buttons .btn{
+        margin-top: 0 !important;
+        padding-top: .4rem !important;
+        margin-left: 4rem;
+        position: relative;
+        top: 4rem;
+        left: 0.25rem;
+    }
+
+    .button{
+        position: relative;
+        left: -1rem;
+    }
+
+    .submit{
+        top: 4.8rem;
+    }
+    
+}
+.redirect {
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+}

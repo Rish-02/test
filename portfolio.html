@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="vector1"></div>
+    <div class="vector2"></div>
+    <div class="vector3"></div>
+   
+    <nav class="navbar" id="navbar">
+        <div class="empty-1 f-right"></div>
+        <div class="nav-control f-right open-sans">
+            <ul id="nav-options">
+                <li class="nav-item"><a href="#bio">Home</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#projects">Work</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!--HOME-->
+    <div id="bio" class="section"></div>
+    <section class="bio container">
+        <div class="profile-subsection w-60">
+            <h1 class="heading-bio" id="heading-bio"></h1>
+            <p class="bio-about open-sans" id="bio-about"></p>
+            <div class="scroll-down">
+                <img src="./images/scroll.png" alt="scroll down">
+                <p class="open-sans">Scroll Down</p>
+            </div>
+        </div>
+        <div class="profile-subsection w-30 text-center">
+            <div class="profile-img-container"><div><img class="profile-image" src="./images/profile.jpg" alt="profile-photo"></div></div>
+            <h1 class="name">Leslie Cooper</h1>
+            <hr class="name-separator">
+            <h1 class="role">WEB DEVELOPER</h1>
+        </div>
+    </section>
+
+    <div id="skills" class="section"></div>
+    <section class="container skills">
+        <div class="skill-list">
+            <h1 class="heading-skills">I am well versed with: </h1>
+            <div class="w-100 wrapping" id="skill-items">
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <div id="projects" class="section"></div>
+    <section class="projects container">
+        <div class="projects-container">
+            <h1 class="heading-projects">Featured Projects:</h1>
+            <div class="project-list" id="project-list">
+                
+            </div>
+        </div>
+    </section>
+
+    <div id="contact" class="section"></div>
+    <section class="contact container">
+        <div class="contact-container text-center">
+            <h1 class="ty">Thank you for visiting my profile!</h1>
+            <h2 class="connect">Connect with me!</h2>
+            <div class="contact-link">
+                <a class="contact-item1"><i class="fa-regular fa-envelope"></i></a>
+                <a class="contact-item2"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="contact-item3"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+<script>
+   function responsiveProfilePic() {
+    var profileImage = document.getElementsByClassName('profile-image')[0];
+    profileImage.height = profileImage.width;
+   }
+   responsiveProfilePic();
+   window.onresize = responsiveProfilePic;
+
+   
+</script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script src="./firebase.js"></script>
+<script src="./portfolio.js"></script>
+</body>
+</html>
