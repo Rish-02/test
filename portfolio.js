@@ -57,7 +57,7 @@ info.once("value" , function(snapshot){
         <div class="project-image w-30"><img src="./images/profile.jpg"></div>
     </div>            
     `;
-    // var newElement = document.createElement("div");
+  
     document.getElementById("skill-items").innerHTML = `
     <div class="skill-item-container" id="skill-item-container">
         <div class='serial-number-container'><span class='serial-number' id='sno'>01</span></div>
