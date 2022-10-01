@@ -11,9 +11,9 @@ info.once("value" , function(snapshot){
     // var newSkill = document.createElement("span");
     // newSkill.innerHTML = lastElement['skill1']
 
-    document.getElementById('name').innerHTML = ""+ '<br>' + lastElement.name;
+    document.getElementById('name').innerHTML = lastElement.name;
     document.getElementById('domain').innerHTML = lastElement.domain;
-    document.getElementById('bio').innerHTML ='<br>'+"Hey There!"+'<br>' + lastElement.bio ;
+    document.getElementById('bio-about').innerHTML = lastElement.bio + "<br>My domain is " + lastElement.domain;
 
     document.getElementById('project-list').innerHTML = `
     <div class="serial-number-container"><span class="serial-number">01</span></div>
@@ -76,6 +76,5 @@ info.once("value" , function(snapshot){
         <div class='skill-item' id='skill-item'>`+lastElement.skill4+`</div>
     </div>
     `;
-    // document.getElementById("skill-items").appendChild(newElement);
     console.log(length);
   })
