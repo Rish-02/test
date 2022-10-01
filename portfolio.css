@@ -93,7 +93,7 @@ example::-webkit-scrollbar {
     padding: 0.5rem;
     width: 50%;
     font-size: 40px;
-    background-color:blue;
+    background-color: #2322226e;
 }
 .section {
     height: 10vh;
