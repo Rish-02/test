@@ -1,6 +1,6 @@
 // retrieveing
 var info = firebase.database().ref("inputform");
-// console.log(db);
+
 info.once("value" , function(snapshot){
     var data  = snapshot.val();
     // data = Object.keys(data);
